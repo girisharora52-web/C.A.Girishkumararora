@@ -143,6 +143,42 @@ section{
     transform: translateY(-5px);
 }
 
+/* APPOINTMENT FORM */
+.appointment-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.appointment-form input, .appointment-form select, .appointment-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.appointment-form textarea {
+    grid-column: span 2;
+}
+
+.btn-submit {
+    grid-column: span 2;
+    background: var(--primary-blue);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background: var(--accent-gold);
+}
+
 /* PARTNERS */
 .partner-grid{
     display: grid;
@@ -189,6 +225,12 @@ footer{
         display: inline-block;
         margin: 10px;
     }
+    .appointment-form {
+        grid-template-columns: 1fr;
+    }
+    .appointment-form textarea, .btn-submit {
+        grid-column: span 1;
+    }
 }
 </style>
 </head>
@@ -204,6 +246,7 @@ footer{
 <nav>
     <a href="#about">The Firm</a>
     <a href="#services">Practice Areas</a>
+    <a href="#appointment">Book Appointment</a>
     <a href="#partners">Partners</a>
     <a href="#contact">Contact</a>
 </nav>
@@ -272,34 +315,15 @@ footer{
     </div>
 </section>
 
-<section id="partners">
-    <h3 class="section-title">Our Partners</h3>
-    <div class="partner-grid">
-        <div class="box">
-            <h4>CA Girish Kumar Arora (FCA)</h4>
-            <p style="color: var(--accent-gold); font-weight: bold;">Senior Partner</p>
-            <p>Membership No: 73724</p>
-        </div>
-        <div class="box">
-            <h4>CA Ashwani Kumar Khurana (FCA)</h4>
-            <p style="color: var(--accent-gold); font-weight: bold;">Senior Partner</p>
-            <p>Membership No: 72150</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact" class="contact-section">
-    <h3 class="section-title" style="color:white;">Get In Touch</h3>
-    <p>Pawan Complex, 1st Floor, 111 Chippi Tank, Meerut - 250002</p>
-    <p>Email: girisharora52@gmail.com</p>
-    <p>Mobile: +91 9837247319</p>
-</section>
-
-<footer>
-    © 2026 Girish Kumar & Co. | Chartered Accountants | All Rights Reserved
-</footer>
-
-<a class="whatsapp" href="https://wa.me/919837247319" target="_blank">WhatsApp</a>
-
-</body>
-</html>
+<section id="appointment">
+    <h3 class="section-title">Schedule a Consultation</h3>
+    <div class="box">
+        <form class="appointment-form">
+            <input type="text" placeholder="Your Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <select required>
+                <option value="" disabled selected>Select Service Required</option>
+                <option value="audit">Statutory/Bank Audit</option>
+                <option value="gst">GST Advisory</option>
+                <option value
