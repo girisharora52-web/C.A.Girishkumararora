@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Girish Kumar & Co. | Chartered Accountants</title>
+<meta name="description" content="Girish Kumar & Co., Meerut - Chartered Accountants providing Audit, Taxation, GST & Advisory Services since 1989.">
+
+<style>
+:root {
+    --primary-blue: #0a2e6b;
+    --accent-gold: #c5a059; /* A more professional, muted gold */
+    --text-dark: #2d3436;
+    --light-bg: #f8f9fa;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Times New Roman', serif; /* Classic professional feel */
+}
+
+body{
+    background: var(--light-bg);
+    color: var(--text-dark);
+    line-height: 1.8;
+}
+
+/* HEADER */
+header{
+    background: var(--primary-blue);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 4px solid var(--accent-gold);
+}
+
+header h1 { 
+    font-size: 42px; 
+    letter-spacing: 2px; 
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+header .location {
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    color: #dfe6e9;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.established-gold {
+    color: var(--accent-gold);
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', sans-serif;
+    border-top: 1px solid rgba(197, 160, 89, 0.3);
+    border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+    display: inline-block;
+    padding: 5px 20px;
+    margin-top: 10px;
+}
+
+/* LEGACY CALLOUT SECTION */
+.legacy-hero {
+    background: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.legacy-hero h2 {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    font-size: 2.2rem;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+
+.legacy-hero p {
+    font-size: 1.2rem;
+    color: #636e72;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* NAVIGATION */
+nav{
+    background: #1e272e;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a{
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'Segoe UI', sans-serif;
+    transition: 0.3s;
+}
+
+nav a:hover{ color: var(--accent-gold); }
+
+/* SECTIONS */
+section{
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h3.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-blue);
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* BOX STYLE */
+.box{
+    background: white;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* SERVICES GRID */
+.services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card{
+    background: white;
+    padding: 30px;
+    border-left: 5px solid var(--primary-blue);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    border-left-color: var(--accent-gold);
+    transform: translateX(10px);
+}
+
+.service-card h4 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* FOOTER */
+footer{
+    background: var(--primary-blue);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.disclaimer {
+    font-size: 11px;
+    margin-top: 20px;
+    opacity: 0.6;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Segoe UI', sans-serif;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>GIRISH KUMAR & CO.</h1>
+    <div class="location">MEERUT | UTTAR PRADESH | INDIA</div>
+    <div class="established-gold">Chartered Accountants | Established 1989</div>
+</header>
+
+<nav>
+    <a href="#about">The Firm</a>
+    <a href="#services">Practice Areas</a>
+    <a href="#audit">Audit Portfolio</a>
+    <a href="#partners">Partners</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="legacy-hero">
+    <h2>"Legacy of Trust. Authority in Taxation."</h2>
+    <p>Serving Clients with Integrity Since 1989</p>
+</div>
+
+<section id="about">
+    <h3 class="section-title">Firm Profile</h3>
+    <div class="box">
+        <p style="font-size: 1.1rem; text-align: center; max-width: 800px; margin: 0 auto 30px;">
+            Girish Kumar & Co. is a premier professional services firm based in Meerut, providing specialized expertise in Audit, Taxation, GST, and Financial Advisory for over three decades.
+        </p>
+        <hr style="margin: 30px 0; opacity: 0.2;">
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;">
+            <div>
+                <p><strong>Status</strong></p>
+                <p>Partnership Firm</p>
+            </div>
+            <div>
+                <p><strong>Headquarters</strong></p>
+                <p>Pawan Complex, Meerut, UP</p>
+            </div>
+            <div>
+                <p><strong>Contact</strong></p>
+                <p>0121-4000903 | 9837247319</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" style="background: #edf2f7;">
+    <h3 class="section-title">Professional Services</h3>
+    <div class="services">
+        <div class="service-card">
+            <h4>Statutory Bank Audit</h4>
+            <p>High-precision statutory branch audits for nationalized and commercial banking institutions.</p>
+        </div>
+        <div class="service-card">
+            <h4>GST & Indirect Tax</h4>
+            <p>End-to-end GST compliance, audit, and strategic advisory for corporate and individual tax-payers.</p>
+        </div>
+        <div class="service-card">
+            <h4>Special Audit u/s 142(2A)</h4>
+            <p>Empanelled experts for Special Audits under the Income Tax Act by the Ministry of Finance.</p>
+        </div>
+        <div class="service-card">
+            <h4>Concurrent & Revenue Audit</h4>
+            <p>Systematic real-time audit solutions for banking and financial sectors.</p>
+        </div>
+        <div class="service-card">
+            <h4>Direct Taxation</h4>
+            <p>Expert Income Tax planning, filing, and representation for complex tax matters.</p>
+        </div>
+        <div class="service-card">
+            <h4>Internal & Stock Audit</h4>
+            <p>Rigorous verification and internal control assessments for corporate sustainability.</p>
+        </div>
+    </div>
+</section>
+
+<section id="partners">
+    <h3 class="section-title">Our Partners</h3>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+        <div class="box">
+            <h4>CA Girish Kumar Arora (FCA)</h4>
+            <p style="color: var(--accent-gold); font-weight: bold;">Senior Partner</p>
+            <p>Membership No: 73724 | Since 1989</p>
+            <p>B.Com (H), LL.B, Concurrent Audit Certification</p>
+        </div>
+        <div class="box">
+            <h4>CA Ashwani Kumar Khurana (FCA)</h4>
+            <p style="color: var(--accent-gold); font-weight: bold;">Senior Partner</p>
+            <p>Membership No: 72150 | Since 1986</p>
+            <p>B.Com</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" style="background: #1e272e; color: white;">
+    <h3 class="section-title" style="color: white;">Get In Touch</h3>
+    <div style="text-align: center; max-width: 600px; margin: auto;">
+        <p style="font-size: 1.2rem; margin-bottom: 20px;">Pawan Complex, 1st Floor, 111 Chippi Tank, Meerut - 250002</p>
+        <p>Email: <strong>girisharora52@gmail.com</strong></p>
+        <p>Mobile: <strong>+91 9837247319</strong></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Girish Kumar & Co. | Chartered Accountants | All Rights Reserved</p>
+    <p class="disclaimer">As per the guidelines of the Institute of Chartered Accountants of India (ICAI), this website is intended solely for information purposes and not for the purpose of advertisement or solicitation.</p>
+</footer>
+
+</body>
+</html>
